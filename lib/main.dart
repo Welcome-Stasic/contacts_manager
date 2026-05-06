@@ -4,10 +4,7 @@ void main() {
   runApp(
     Directionality(
       textDirection: TextDirection.ltr,
-      child: Container(
-        color: Color(0xFFFFFFFF),
-        child: App(),
-      ),
+      child: Container(color: Color(0xFFFFFFFF), child: App()),
     ),
   );
 }
@@ -18,9 +15,9 @@ class App extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Todo list',
+      title: 'Список контактов',
       theme: ThemeData(primarySwatch: Colors.blue),
-      // home: const HomeScreen(),    
+      // home: const HomeScreen(),
     );
   }
 }
